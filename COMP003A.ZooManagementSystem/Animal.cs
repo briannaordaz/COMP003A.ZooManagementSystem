@@ -5,18 +5,18 @@ public abstract class Animal
     private string _name;
     private string _species;
 
-    public string Name
+    public string Name // public property named "Name"
     {
         get { return _name; }
         
         set { if(String.IsNullOrWhiteSpace(value)) 
-                { throw new ArgumentException("Name cannot be null or whitespace."); } 
+                { throw new ArgumentException("Name cannot be empty."); } 
             _name = value;
         }
         
     }
 
-    public string Species
+    public string Species //public property named "Species"
     {
         get { return _species; }
         
