@@ -4,6 +4,6 @@ namespace COMP003A.ZooManagementSystem;
  {
      public override void MakeSound()
      {
-         Console.WriteLine("The lion roars!");
+         Console.WriteLine("The lion roars!" + " " + Name + " " + Species);
      }
  }

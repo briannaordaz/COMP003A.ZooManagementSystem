@@ -10,7 +10,7 @@ public abstract class Animal
         get { return _name; }
         
         set { if(String.IsNullOrWhiteSpace(value)) 
-                { throw new ArgumentException("Name cannot be empty."); } 
+                 throw new ArgumentException("Name cannot be empty."); 
             _name = value;
         }
         
@@ -21,7 +21,7 @@ public abstract class Animal
         get { return _species; }
         
         set { if(String.IsNullOrWhiteSpace(value))
-                { throw new ArgumentException("Species cannot be empty.");} 
+                 throw new ArgumentException("Species cannot be empty.");
                 _species = value;
         }
     }
