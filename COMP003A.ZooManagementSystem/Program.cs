@@ -128,7 +128,7 @@ class Program
                     }
                     else if (choice2 == "2")
                     {
-                        zoo.DescribeAnimal(nameOfAnimal.Name, nameOfAnimal.Species);
+                        zoo.DescribeAnimal($"{nameOfAnimal.Name} \n {nameOfAnimal.Species}");
                     }
                     else if (choice2 == "3")
                     {
@@ -138,7 +138,10 @@ class Program
                         if (int.TryParse(Console.ReadLine(), out ageOfAnimal))
                         {
                             if (ageOfAnimal >= 0)
-                            { zoo.DescribeAnimal(nameOfAnimal.Name, nameOfAnimal.Species, ageOfAnimal);}
+                            {
+                                zoo.DescribeAnimal($"{nameOfAnimal.Name}, \n {nameOfAnimal.Species}, \n {ageOfAnimal}");
+                            }
+                            
                             else
                             {
                                 Console.WriteLine("Age of animals cannot be negative.");
